@@ -280,6 +280,10 @@ HTML;
      */
     protected function _toHtml()
     {
+        Mage::log(get_class($this));
+        Mage::log($this->getNameInLayout());
+        Mage::log($this->getTemplateFile());
+
         if (!$this->getTemplate()) {
             return '';
         }
