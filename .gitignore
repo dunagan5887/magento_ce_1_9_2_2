@@ -1,0 +1,5 @@
+.idea
+var/cache
+var/log
+var/report
+var/session
