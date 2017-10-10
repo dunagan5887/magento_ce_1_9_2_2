@@ -3,7 +3,7 @@
     <modules>
         <Mage_ProductLogUpdate>
             <active>true</active>
-            <codepool>local</codepool>
+            <codePool>local</codePool>
         </Mage_ProductLogUpdate>
     </modules>
 </config>
