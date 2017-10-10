@@ -1,4 +1,5 @@
 .idea
+app/etc/local.xml
 var/cache
 var/log
 var/report
