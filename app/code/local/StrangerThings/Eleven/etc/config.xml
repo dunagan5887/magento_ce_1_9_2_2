@@ -1,0 +1,24 @@
+<?xml version="1.0"?>    <config>    
+    <modules>
+        <strangerthings_eleven>
+            <version>
+                0.1.0
+            </version>
+        </strangerthings_eleven>
+    </modules>
+<!-- ... -->
+    <frontend>
+        <routers>
+            <!-- the <eleven> tagname appears to be arbitrary, but by 
+            convention is should match the frontName tag below-->
+            <eleven> 
+                <use>standard</use>
+                <args>
+                    <module>StrangerThings_Eleven</module>
+                    <frontName>eleven</frontName>
+                </args>
+            </eleven>
+        </routers>
+    </frontend>
+<!-- ... -->        
+</config>

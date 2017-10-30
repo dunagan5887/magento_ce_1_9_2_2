@@ -1,0 +1,8 @@
+<?xml version="1.0"?>    <config>
+     <modules>
+        <StrangerThings_Eleven>
+            <active>true</active>
+            <codePool>local</codePool>
+        </StrangerThings_Eleven>
+     </modules>
+</config>
