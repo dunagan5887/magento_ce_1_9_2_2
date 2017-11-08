@@ -6,12 +6,10 @@
             </version>
         </strangerthings_eleven>
     </modules>
-<!-- ... -->
+
     <frontend>
         <routers>
-            <!-- the <eleven> tagname appears to be arbitrary, but by 
-            convention is should match the frontName tag below-->
-            <eleven> 
+           <eleven> 
                 <use>standard</use>
                 <args>
                     <module>StrangerThings_Eleven</module>
@@ -20,5 +18,5 @@
             </eleven>
         </routers>
     </frontend>
-<!-- ... -->        
+       
 </config>

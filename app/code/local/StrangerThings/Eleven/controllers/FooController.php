@@ -1,3 +1,6 @@
+<?php 
+
+
 class StrangerThings_Eleven_FooController extends Mage_Core_Controller_Front_Action{
     
 
@@ -13,3 +16,6 @@ public function indexAction(){
         echo 'Foo delete Action';
     }        
 }
+
+
+
