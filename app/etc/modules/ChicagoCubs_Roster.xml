@@ -1,0 +1,8 @@
+<?xml version="1.0"?>    <config>
+     <modules>
+        <ChicagoCubs_Roster>
+            <active>true</active>
+            <codePool>local</codePool>
+        </ChicagoCubs_Roster>
+     </modules>
+</config>
