@@ -4,5 +4,8 @@
             <active>true</active>
             <codePool>local</codePool>
         </ChicagoCubs_Roster>
-     </modules>
+	<block type="chicagocubs_roster/footer" 
+      			 name="chicagocubs_roster_footer"
+       			 template="chicagocubs_roster/footer.phtml" />    
+ </modules>
 </config>

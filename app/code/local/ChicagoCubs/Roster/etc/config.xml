@@ -6,6 +6,13 @@
             </version>
         </ChicagoCubs_Roster>
     </modules>
+	<global>
+		<blocks>
+			<chicagocubs_roster>
+			<class>ChicagoCubs_Roster_Block</class>
+			</chicagocubs_roster>
+		</blocks>
+	</global>
 	<frontend>
         <routers>
            <roster> 
@@ -16,5 +23,14 @@
                 </args>
             </roster>
         </routers>
+		<layout>
+			<updates>
+				<chicagocubs_roster
+				  module="ChicagoCubs_Roster">
+					<file>chicagocubs_roster.xml</file>
+				</chicagocubs_roster>
+			</updates>
+		</layout>
+			
     </frontend>
 </config>
