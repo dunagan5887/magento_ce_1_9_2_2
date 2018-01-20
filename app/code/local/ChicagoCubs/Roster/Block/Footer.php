@@ -6,4 +6,4 @@ class ChicagoCubs_Roster_Block_Footer
     {
         echo "The Chicago Cubs Are the Best";
     }
-}S
+}

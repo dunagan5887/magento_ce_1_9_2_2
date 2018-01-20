@@ -126,6 +126,8 @@ class Mage_Core_Model_Layout_Update
 
     public function addHandle($handle)
     {
+        Mage::log($handle);
+
         if (is_array($handle)) {
             foreach ($handle as $h) {
                 $this->_handles[$h] = 1;
