@@ -7,7 +7,12 @@
             <block type="core/template" 
                    name="chicagocubs_roster_footer" 
                    template="chicagocubs_roster/footer.phtml" />
+	</reference>
+	<reference name="content">
+	    <block type="core/template" 
+                   name="chicagocubs_roster_stats" 
+                   template="chicagocubs_roster/stats.phtml" />
             
         </reference>
        </default>
-      </layout>
+      </layout>	

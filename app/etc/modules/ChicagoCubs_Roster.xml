@@ -4,11 +4,6 @@
             <active>true</active>
             <codePool>local</codePool>
         </ChicagoCubs_Roster>
-	<block type="chicagocubs_roster/footer" 
-      			 name="chicagocubs_roster_footer"
-       			 template="chicagocubs_roster/footer.phtml" />
-	<block type="chicagocubs_roster/body" 
-      			 name="chicagocubs_roster_stats"
-       			 template="chicagocubs_roster/stats.phtml" />     
+	   
  </modules>
 </config>
