@@ -1,5 +1,5 @@
 
-class ChicagoCubs_Roster_Model_Resource_Film extends Mage_Core_Model_Resource_Db_Abstract
+class ChicagoCubs_Roster_Model_Resource_Players extends Mage_Core_Model_Resource_Db_Abstract
 {
      public function _construct()
      {

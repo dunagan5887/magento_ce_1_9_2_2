@@ -1,4 +1,4 @@
-class ChicagoCubs_Roster_Model_Film extends Mage_Core_Model_Abstract
+class ChicagoCubs_Roster_Model_Players extends Mage_Core_Model_Abstract
 {
      public function _construct()
      {
