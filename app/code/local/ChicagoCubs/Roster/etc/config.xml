@@ -7,6 +7,34 @@
         </ChicagoCubs_Roster>
     </modules>
 	<global>
+		<models>
+		    <chicagocubs_roster>
+			 <class>ChicagoCubs_Roster_Model</class>
+			 <resourceModel>chicagocubs_roster_resource</resourceModel>
+		     </chicagocubs_roster>
+		    <chicagocubs_roster_resource>
+			 <class>ChicagoCubs_Roster_Model_Resource</class>
+			 <entities>
+			     <stats>
+			       <table>Players</table>
+			     </stats>
+			  </entities>
+		    </chicagocubs_roster>
+		</models>
+		<resources>
+			<!-- connection pour ecrire -->
+			<chicagocubs_roster_write>
+			    <connection>
+				<use>core_write</use>
+			    </connection>
+			</chicagocubs_roster_write>
+			<!-- connection pour lire-->
+		       <chicagocubs_roster_read>
+			  <connection>
+			     <use>core_read</use>
+			  </connection>
+		       </chicagocubs_roster_read>
+		</resources>
 		<blocks>
 			<chicagocubs_roster>
 			<class>ChicagoCubs_Roster_Block</class>
