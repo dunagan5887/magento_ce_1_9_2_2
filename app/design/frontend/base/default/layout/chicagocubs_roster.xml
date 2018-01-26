@@ -11,7 +11,7 @@
 	<reference name="content">
 	    <block type="core/template" 
                    name="chicagocubs_roster_stats" 
-                   template="chicagocubs_roster/stats.phtml" />
+                   template="chicagocubs_roster/Stats.phtml" />
             
         </reference>
        </default>
