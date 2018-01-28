@@ -3,15 +3,24 @@
 
      <layout>  
       <default>
+
+          <reference name="head">
+              <action method="addCss"><file>css/chicago_cubs/roster.css</file></action>
+          </reference>
+
+          <reference name="head">
+              <action method="addJs"><file>chicago_cubs/roster.js</file></action>
+          </reference>
+
        <reference name="before_body_end">
             <block type="core/template" 
                    name="chicagocubs_roster_footer" 
                    template="chicagocubs_roster/footer.phtml" />
 	</reference>
 	<reference name="content">
-	    <block type="core/template" 
+	    <block type="chicagocubs_roster/stats"
                    name="chicagocubs_roster_stats" 
-                   template="chicagocubs_roster/Stats.phtml" />
+                   template="chicagocubs_roster/stats.phtml" />
             
         </reference>
        </default>

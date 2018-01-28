@@ -1,5 +1,48 @@
+<?php /* @var ChicagoCubs_Roster_Block_Stats $this */ ?>
+
 <div>
-GO CUBS GO!!!
+    <?php
+        //echo $this->methodblock();
+    ?>
+
+    <table class="players_table">
+        <th>Rk</th><th>Pos</th><th>Name</th><th>Age</th><th>G</th><th>PA</th><th>AB</th><th>R</th><th>H</th><th>2B</th><th>3B</th><th>HR</th><th>RBI</th><th>HR</th><th>SB</th><th>CS</th><th>BB</th><th>SO</th><th>BA</th><th>OBP</th><th>SLG</th><th>OPS</th><th>OPS+</th><th>TB</th><th>GDP</th><th>HBP</th><th>SH</th><th>SF</th><th>IBB</th>
 
 
+        <?php $playersCollection = $this->getPlayersCollection(); ?>
+        <?php foreach($playersCollection->getItems() as $player) { ?>
+
+            <tr>
+            <td><?php echo $player->getData('Rk'); ?></td>
+            <td><?php echo $player->getData('Pos'); ?></td>
+            <td><?php echo $player->getData('Name'); ?></td>
+            <td><?php echo $player->getData('Age'); ?></td>
+            <td><?php echo $player->getData('G'); ?></td>
+            <td><?php echo $player->getData('PA'); ?></td>
+            <td><?php echo $player->getData('AB'); ?></td>
+            <td><?php echo $player->getData('R'); ?></td>
+            <td><?php echo $player->getData('H'); ?></td>
+            <td><?php echo $player->getData('2B'); ?></td>
+            <td><?php echo $player->getData('3B'); ?></td>
+            <td><?php echo $player->getData('HR'); ?></td>
+            <td><?php echo $player->getData('RBI'); ?></td>
+            <td><?php echo $player->getData('SB'); ?></td>
+            <td><?php echo $player->getData('CS'); ?></td>
+            <td><?php echo $player->getData('BB'); ?></td>
+            <td><?php echo $player->getData('SO'); ?></td>
+            <td><?php echo $player->getData('BA'); ?></td>
+            <td><?php echo $player->getData('OBP'); ?></td>
+            <td><?php echo $player->getData('SLG'); ?></td>
+            <td><?php echo $player->getData('OPS'); ?></td>
+            <td><?php echo $player->getData('OPS+'); ?></td>
+            <td><?php echo $player->getData('TB'); ?></td>
+            <td><?php echo $player->getData('GDP'); ?></td>
+            <td><?php echo $player->getData('HBP'); ?></td>
+            <td><?php echo $player->getData('SH'); ?></td>
+            <td><?php echo $player->getData('SF'); ?></td>
+            <td><?php echo $player->getData('IBB'); ?></td>
+        </tr>
+        <?php } ?>
+
+    </table>
 </div>

@@ -1,49 +1,54 @@
-<?xml version="1.0"?>    <config>    
+<?xml version="1.0"?>
+<config>
     <modules>
         <ChicagoCubs_Roster>
-            <version>
-                0.1.0
-            </version>
+            <version>0.1.0</version>
         </ChicagoCubs_Roster>
     </modules>
-	<global>
-		<models>
-		    <chicagocubs_roster>
-			 <class>ChicagoCubs_Roster_Model</class>
-			 <resourceModel>chicagocubs_roster_resource</resourceModel>
-		     </chicagocubs_roster>
-		    <chicagocubs_roster_resource>
-			 <class>ChicagoCubs_Roster_Model_Resource</class>
-			 <entities>
-			     <stats>
-			       <table>Players</table>
-			     </stats>
-			  </entities>
-		    </chicagocubs_roster_resource>
-		</models>
-		<resources>
-			<!-- connection pour ecrire -->
-			<chicagocubs_roster_write>
-			    <connection>
-				<use>core_write</use>
-			    </connection>
-			</chicagocubs_roster_write>
-			<!-- connection pour lire-->
-		       <chicagocubs_roster_read>
-			  <connection>
-			     <use>core_read</use>
-			  </connection>
-		       </chicagocubs_roster_read>
-		</resources>
-		<blocks>
-			<chicagocubs_roster>
-			<class>ChicagoCubs_Roster_Block</class>
-			</chicagocubs_roster>
-		</blocks>
-	</global>
-	<frontend>
+
+    <global>
+        <models>
+            <chicagocubs_roster>
+                <class>ChicagoCubs_Roster_Model</class>
+                <resourceModel>chicagocubs_roster_resource</resourceModel>
+            </chicagocubs_roster>
+            <chicagocubs_roster_resource>
+                <class>ChicagoCubs_Roster_Model_Resource</class>
+                <entities>
+                    <players>
+                        <table>Players</table>
+                    </players>
+                </entities>
+            </chicagocubs_roster_resource>
+        </models>
+
+        <helpers>
+            <chicagocubs_roster>
+                <class>ChicagoCubs_Roster_Helper</class>
+            </chicagocubs_roster>
+        </helpers>
+
+        <blocks>
+            <chicagocubs_roster>
+                <class>ChicagoCubs_Roster_Block</class>
+            </chicagocubs_roster>
+        </blocks>
+
+        <resources>
+            <chicagocubs_roster_setup>
+                <setup>
+                    <module>ChicagoCubs_Roster</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </chicagocubs_roster_setup>
+        </resources>
+    </global>
+
+    <frontend>
         <routers>
-           <roster> 
+            <roster>
                 <use>standard</use>
                 <args>
                     <module>ChicagoCubs_Roster</module>
@@ -51,14 +56,15 @@
                 </args>
             </roster>
         </routers>
-		<layout>
-			<updates>
-				<chicagocubs_roster
-				  module="ChicagoCubs_Roster">
-					<file>chicagocubs_roster.xml</file>
-				</chicagocubs_roster>
-			</updates>
-		</layout>
-			
+    </frontend>
+
+    <frontend>
+        <layout>
+            <updates>
+                <chicagocubs_roster>
+                    <file>chicagocubs_roster.xml</file>
+                </chicagocubs_roster>
+            </updates>
+        </layout>
     </frontend>
 </config>
