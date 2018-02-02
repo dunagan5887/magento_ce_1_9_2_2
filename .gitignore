@@ -1,5 +1,6 @@
 local.xml
 var/cache/
+var/log/
 var/session/
 sitemap/
 media/catalog/
